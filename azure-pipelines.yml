@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: 'Ubuntu-16.04'
 
+container:
+  image: debian-stretch:slim
+  options: --hostname container-test --ip 192.168.0.1
+
 variables:
   buildConfiguration: 'Release'
 

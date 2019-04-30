@@ -11,13 +11,12 @@ pool:
 
 container:
   image: mcr.microsoft.com/dotnet/core/sdk:2.2.203-alpine3.9
-  options: --hostname dotNetCoreBuildContainer
 
 variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: echo hello
+- script: echo buildConfiguration $(buildConfiguration)
 
 #steps:
 #- script: dotnet build --configuration $(buildConfiguration)

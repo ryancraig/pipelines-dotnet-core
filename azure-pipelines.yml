@@ -11,7 +11,7 @@ pool:
 
 container:
   image: mcr.microsoft.com/dotnet/core/sdk:2.2.203-alpine3.9
-  options: --hostname dotNetCoreBuildContainer --ip 192.168.0.1
+  options: --hostname dotNetCoreBuildContainer
 
 variables:
   buildConfiguration: 'Release'
